@@ -1,4 +1,5 @@
 {
+  "manifest_version": 1,
   "name": "PNGtuber Avatar Sync",
   "slug": "pngtuber_sync",
   "kind": "video_overlay",
