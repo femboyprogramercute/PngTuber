@@ -1,0 +1,22 @@
+{
+  "name": "PNGtuber Avatar Sync",
+  "slug": "pngtuber_sync",
+  "kind": "video_overlay",
+  "version": "1.0.0",
+  "description": "Sincroniza automáticamente los sprites del avatar analizando los picos de audio de la pista de voz dentro de Drift.",
+  "parameters": {
+    "threshold": {
+      "type": "float",
+      "label": "Umbral de Voz",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.15
+    }
+  },
+  "assets": {
+    "closed": "avatar_cerrado.png",
+    "open": "avatar_abierto.png",
+    "blink": "avatar_parpadeo.png",
+    "talk_blink": "avatar_hablando_parpadeo.png"
+  }
+}
