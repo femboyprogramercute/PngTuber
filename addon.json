@@ -3,20 +3,34 @@
   "slug": "pngtuber_sync",
   "kind": "video_overlay",
   "version": "1.0.0",
-  "description": "Sincroniza automáticamente los sprites del avatar analizando los picos de audio de la pista de voz dentro de Drift.",
+  "description": "Sincroniza el avatar eligiendo tus 4 sprites directamente desde la interfaz del editor.",
   "parameters": {
-    "threshold": {
+    "avatar_closed": {
+      "type": "file",
+      "label": "Sprite: Boca Cerrada (Normal)",
+      "filter": "Images (*.png)"
+    },
+    "avatar_open": {
+      "type": "file",
+      "label": "Sprite: Boca Abierta (Hablando)",
+      "filter": "Images (*.png)"
+    },
+    "avatar_blink": {
+      "type": "file",
+      "label": "Sprite: Parpadeo (Ojos Cerrados)",
+      "filter": "Images (*.png)"
+    },
+    "avatar_talk_blink": {
+      "type": "file",
+      "label": "Sprite: Hablando + Parpadeo",
+      "filter": "Images (*.png)"
+    },
+    "sensitivity": {
       "type": "float",
-      "label": "Umbral de Voz",
+      "label": "Umbral de Sensibilidad de Voz",
       "min": 0.0,
       "max": 1.0,
       "default": 0.15
     }
-  },
-  "assets": {
-    "closed": "avatar_cerrado.png",
-    "open": "avatar_abierto.png",
-    "blink": "avatar_parpadeo.png",
-    "talk_blink": "avatar_hablando_parpadeo.png"
   }
 }
