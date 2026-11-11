@@ -1,10 +1,10 @@
 {
-  "manifest_version": 1,
+  "format_version": "1.0",
+  "type": "effect",
+  "id": "pngtuber_sync",
   "name": "PNGtuber Avatar Sync",
-  "slug": "pngtuber_sync",
-  "kind": "video_overlay",
   "version": "1.0.0",
-  "description": "Sincroniza el avatar eligiendo tus 4 sprites directamente desde la interfaz del editor.",
+  "description": "Sincroniza el avatar dentro del editor.",
   "parameters": {
     "avatar_closed": {
       "type": "file",
